@@ -16,7 +16,7 @@ num = [1, 2, 3, -9].map! { |num| num ** 2 }
 end 
 
 def reduce_to_total(source_array, starting_point=0)
-  [1, 2, 3].reduce(100){ |total, num| total + num }
+  source_array.reduce(starting_point){ |total, num| total + num }
 end 
 
 def reduce_to_total(source_array, starting_point)
