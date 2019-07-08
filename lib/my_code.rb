@@ -28,7 +28,7 @@ def reduce_to_all_true(source_array)
 end 
 
 def reduce_to_any_true(source_array)
-   [1, 2, true, "razmatazz"].reduce(3){ |total, num| total + num }
+   source_array.any?
 end
 
 
